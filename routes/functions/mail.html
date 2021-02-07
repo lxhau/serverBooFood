@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Email</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+		.body
+		{
+			color: #4C685C;
+			background: #F3F3F3;
+			align-items: center;
+			position: relative;
+			width: 60%;
+			margin:0;
+			padding:0;
+			font-family: 'Montserrat', sans-serif;
+
+		}
+		.section__header
+		{
+			background: #55BDDD;
+			width:100%;
+			height:200px;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.header__top, .header__bot{
+		 height: auto; width: 100%;text-align: center;
+		}
+
+		main
+		{
+			padding:1% 3% 0 3%;
+		}
+
+		.box__flex
+		{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			width: 100%;
+		}
+
+		.box__flex .left, .box__flex .right
+		{width: 50%; text-align: center;}
+		footer
+		{
+			width: 100%;
+			height: 100px;
+			background: #78909c;
+		}
+	</style>
+</head>
+<body>
+	<div class="body">
+ 	<header>
+ 		<section  class="section__header">
+ 			<div style="padding-top: 3%"  class="header__top">
+ 			<img src="https://lh3.googleusercontent.com/pw/ACtC-3doJO0HqqoxFq1L7ogpHy6gRGomTvJc3Tme7ryzYIoNeyb0I-jD8zPxI80e6p7923TrAg-Ci8ygY2FreBROvCMWA7QqukhjAOH8xSF_8kS83oCGY9R_FVLMn-WOxeRTzUUPsKzWa5684U1ObZldZuBcwQ=s920-no?authuser=0" alt="" width="100px" height="100px">
+ 			</div>
+ 			<div style="padding-top: 2%; color: white; " class="header__bot">
+ 				BOOFOOD
+ 			</div>
+ 		</section>
+ 	</header>
+ 	<main>
+ 		<section style="color: #003746" class="section__main">
+ 			<h3 >Tài Khoản BOO Đã Được Kích Hoạt</h3>
+ 			<div class="main__content" style="width: 50%;">
+ 				<p>Chào ! {{ fullName }}</p>
+ 					<div style="padding-left: 20px">
+ 						<p style="font-size: 14px ;font-weight:500">Tên đăng nhập: {{ emailstaff }} </p>
+
+ 						<p style="font-size: 14px ;font-weight:500">Mật Khẩu: {{ passwordstaff }}</p>
+						<div style="font-size: 14px ;font-weight:500">
+								<a style="text-decoration:none;color:#039be5" href="http://localhost:3000/base-login"</a> 
+								<p>Đăng nhập tại đây.</p>
+						</div>
+ 					</div>
+ 			</div>
+ 			<div style="font-size:14px;line-height:20px;color:#212121;font-weight:400">
+ 					<div>Nếu bạn có bất cứ vấn đề nào về BOO hãy liên hệ trực tiếp với chúng tôi. Qua hòm thư lexuanhau99@gmail.com 📬
+ 					</div>
+ 					<div style="margin-top:14px ; margin-bottom: 24px">Cảm ơn bạn đã đến với BOO!</div>
+ 				</div>
+ 		</section>
+ 	</main>
+ 	<footer>
+ 		<div style="padding: 25px">
+ 			<table style="width:100%" cellpadding="0" cellspacing="0">
+ 				<tbody>
+ 					<tr>
+ 						<td>
+ 							<img style="height:24px; max-height:50px; min-height:50px" src="https://lh3.googleusercontent.com/pw/ACtC-3doJO0HqqoxFq1L7ogpHy6gRGomTvJc3Tme7ryzYIoNeyb0I-jD8zPxI80e6p7923TrAg-Ci8ygY2FreBROvCMWA7QqukhjAOH8xSF_8kS83oCGY9R_FVLMn-WOxeRTzUUPsKzWa5684U1ObZldZuBcwQ=s920-no?authuser=0" class="CToWUd">
+ 						</td>
+ 						<td>
+ 							<div style="font-size:10px;line-height:14px;font-weight:400;text-align:right">
+ 								<a style="color:#d6dde1;text-decoration:none">BOOFOOD<br>180 Cao Lỗ<br>Phường 4, Quận 8, Hồ Chí Minh</a>
+ 							</div>
+ 						</td>
+ 					</tr>
+ 				</tbody>
+ 			</table>
+ 		</div>
+ 	</footer>
+ </div>
+</body>
+</html>

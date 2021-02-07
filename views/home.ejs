@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BOO FOOD</title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="./icon_tran.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+
+
+
+<style>
+  
+  .line{border-bottom:2px solid blue;}
+  .box__menu--ul{list-style:none;}
+  .box__menu--ul li{display:inline-block;position: relative; margin-right: 2rem;}
+  .box__menu--ul li a{text-decoration:none; color:white; }
+  .box__menu--ul li::before{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    
+    background-color: lightgrey;
+    height: 0.2rem;
+    transform: scaleX(0);
+    transform-origin: 50%;
+    transition: 0.5s;
+  }
+  .box__menu--ul li a:hover
+  {
+    color:lightblue;
+  }
+  .box__menu--ul li:hover:before
+  {
+    transform: scaleX(1);
+    transition: 0.5s;
+  }
+*{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('./IMG_1822-2.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    <img height="30px" width="30px" src="./icon_tran.png">
+    BOO FOOD
+  </div>
+  <div class="box__menu w3-display-topright w3-padding-small">
+  <ul class="box__menu--ul">
+    <li><a class="w3-xlarge" href="#">Home</a></li>&emsp; &emsp;
+    <li><a class="w3-xlarge" href="./testupload">File Manager</a></li>&emsp; &emsp;
+    <li><a class="w3-xlarge" href="./base-login">Sign In</a></li>&emsp; &emsp;
+  </ul>
+</div>
+
+</div>
+<div class="w3-display-middle w3-text-white">
+  <h1 class="w3-jumbo w3-animate-top">SẮP RA MẮT</h1>
+  <hr class="w3-border-grey" style="margin:auto;width:40%">
+</div>
+</body>
+</html>
